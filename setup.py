@@ -1,16 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='dictum-proto',
-    version='0.4.0',
-    packages=find_packages(),
+    name='dictum_proto',
+    version='0.0.2',
+    packages=find_packages(include=["dictum_proto", "dictum_proto.*"]),
     install_requires=[
-        'protobuf',
-        'grpcio',
-        'grpcio-tools',
+        'grpcio==1.50.0',
+        'grpcio-tools==1.50.0'
     ],
-    url='https://github.com/Mikhail22332/dictum_proto_alpha',
-    author='loopnyapy,skyfet',
-    author_email='da.eto.deniska@gmail.com',
-    description='Protobuf api for Dictum'
 )
